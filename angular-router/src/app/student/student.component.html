@@ -1,0 +1,30 @@
+<div>
+  <h3>Student Details</h3>
+  <table border="1" name = "students">
+    <thead>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Opted Subjects</th>
+    </thead>
+    <tr *ngFor="let student of studentsList">
+      <td>
+        {{student.id}}
+      </td>
+      <td>
+        {{student.name}}
+      </td>
+      <td>
+        {{student.age}}
+      </td>
+      <td>
+        {{student.gender}}
+      </td>
+      <td>
+        {{student.subjects}}
+      </td>
+    </tr>
+  </table>
+</div>
+<p> <a (click)="goToHome()"><u>Click here</u></a> to go back to Home page </p>
